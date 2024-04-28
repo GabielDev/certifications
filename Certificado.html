@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Staily.css">
+    <title id="Titulo">Document</title>
+</head>
+<body>
+    <center>
+        <div class="Fondo" id="fris">
+            <div class="icono">
+                <img src="logo.png" alt="">
+            </div>
+            <h1 class="title">CERTIFICADO</h1>
+            <h4>DE FINALIZACION</h4>
+            <br><br><br>
+            <P>Gabriel Carrillo, Certifica que:</P>
+            <h1 id="Nombre"></h1>
+            <p id="Identificacion"></p>
+            <p id="Curso_Horas"></p>
+            <p id="Fecha_fin"></p>
+            <br><br><br><br><br><br><br>
+            <font size="1" id="Final"></font>
+
+        </div>
+    </center>
+
+    <script>
+        window.onload = function() {
+          // Obtener parámetros de la URL
+          const urlParams = new URLSearchParams(window.location.search);
+          const nombre = urlParams.get('Nombre');
+          const identificacion = urlParams.get('Identificacion');
+          const cursoHoras = urlParams.get('Curso_Horas');
+          const fechaFin = urlParams.get('Fecha_fin');
+          const emitido = urlParams.get('Final');
+    
+          // Llenar automáticamente los campos con los valores obtenidos
+          document.getElementById('Nombre').innerText = nombre;
+          document.getElementById('Identificacion').innerText = identificacion;
+          document.getElementById('Curso_Horas').innerText = cursoHoras;
+          document.getElementById('Fecha_fin').innerText = fechaFin;
+          document.getElementById('Final').innerText = emitido;
+          document.getElementById('Titulo').innerText = "Certificado - "+nombre;
+    };
+  </script>
+
+    
+</body>
+</html>

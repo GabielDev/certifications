@@ -1,0 +1,22 @@
+.Fondo {
+    width: 1000px;
+    height: 600px;
+    border: solid black ;
+    margin-top: 15px;
+    background-image: url('Fondo_Certificado.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.icono {
+    width: 100px;
+    height: 60px;
+    position: relative;
+    right: 40%;
+    display: flex;
+}
+
+.title {
+    margin-top: 5px;
+}
+  
