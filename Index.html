@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificado</title>
+</head>
+<body>
+    <center><h1>Certificado</h1></center>
+    <form action="certificado.php"method="post">
+        <fieldset>
+            <legend>
+                Datos certificado
+            </legend>
+            <br>
+            <label for="cu">Nombre del curso: </label>
+            <input type="text"name="cu"required><br><br>
+
+            <label for="ho">Número de horas:</label>
+            <input type="number"name="ho"required min="1" max="72"><br><br>
+            
+            <label for="es">Nombre del estudiante: </label>
+            <input type="text"name="es"required><br><br>
+            
+            <label for="ce">Cédula: </label>
+            <input type="text"name="ce"required pattern="[0-9]+"><br><br>
+            
+            <label for="ft">Fecha de terminación: </label>
+            <input type="date"name="ft"required><br><br>
+        </fieldset>
+        <br><br>
+        <center><input type="submit"value="Generar certificado"></center>
+    </form>
+</body>
+</html>
